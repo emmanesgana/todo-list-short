@@ -1,0 +1,89 @@
+@import url(reset.css);
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 380px;
+    font-family: "Inconsolata", monospace;
+    background-color: #f4f4f4;
+}
+
+.title {
+    margin-bottom: 0.5em;
+}
+
+#container {
+    background-color: #ffffff;
+    padding: 1.5em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 2.5em;
+}
+
+#new-task {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid #f8f8f8;
+    border-radius: 4px;
+    outline: none;
+}
+
+#new-task:focus {
+    box-shadow: 0px 0px 0px 3px rgb(235, 235, 235);
+}
+
+#add-task {
+    padding: 10px;
+    width: 100%;
+    background-color: #af7eeb;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.15rem;
+    transition: opacity 0.3s ease;
+    font-weight: 700;
+}
+
+#add-task i {
+    margin-right: 5px;
+}
+
+#task-list {
+    margin-top: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+#task-list li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #fafafa;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#task-list li span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-left: 5px;
+}
+
+button:not(#add-task) {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0.5em;
+    letter-spacing: -0.9px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
