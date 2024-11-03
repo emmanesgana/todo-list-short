@@ -1,11 +1,11 @@
 import { deleteTask } from "./deleteTask.js";
 import { editTask } from "./editTask.js";
 import { toggleTask } from "./toggleTask.js";
-import { clearCompleted } from "./clearCompleted.js";
+// import { clearCompleted } from "./clearCompleted.js";
 
-const clearButton = document.querySelector('#clear-button');
+// const clearButton = document.querySelector('#clear-button');
 
-clearButton.addEventListener('click', clearCompleted);
+// clearButton.addEventListener('click', clearCompleted);
 
 export function addTask(taskValue, isComplete = false) {
     const ul = document.querySelector('#task-list');
